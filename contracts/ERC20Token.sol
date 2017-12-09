@@ -5,6 +5,11 @@ import "zeppelin-solidity/contracts/token/MintableToken.sol";
 
 contract ERC20Token is MintableToken {
 
+
+    function ERC20Token(address _owner) public{
+        require(_owner != address(0));
+        owner = _owner;
+    }
     /**
      * Modification - owner only
      * @dev Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.
