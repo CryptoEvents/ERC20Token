@@ -6,6 +6,17 @@ contract('ERC20Token', function(accounts) {
 
     });
 
+    it("init token without owner should fail", async function() {
+
+        try {
+            let token = await ERC20Token.new();
+            assert(false);
+        } catch (e){
+            assert(true);
+        }
+
+    });
+
     it("should allow only owner to transfer token", async function() {
         //todo mint account[0]
         //todo transfer  to account[1]
