@@ -12,6 +12,10 @@ contract ERC20Token is MintableToken {
         require(_owner != address(0));
         owner = _owner;
     }
+
+    function createLottery() public {
+        // todo for feature see road map or whitepaper (not exist right now)
+    }
     /**
      * Modification - owner only
      * @dev Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.
