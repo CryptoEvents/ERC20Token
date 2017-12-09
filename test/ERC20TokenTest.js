@@ -6,4 +6,11 @@ contract('ERC20Token', function(accounts) {
 
     });
 
+    it("should allow only owner to transfer token", async function() {
+        //todo mint account[0]
+        //todo transfer  to account[1]
+        //todo try transfer from another user account[1] to account[2]
+
+    });
+
 });

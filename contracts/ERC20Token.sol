@@ -3,7 +3,7 @@ pragma solidity ^0.4.18;
 import "zeppelin-solidity/contracts/token/MintableToken.sol";
 
 
-contract erc20Token is MintableToken {
+contract ERC20Token is MintableToken {
 
     /**
      * Modification - owner only
